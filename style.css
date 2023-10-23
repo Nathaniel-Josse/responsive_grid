@@ -13,11 +13,11 @@
     "contenu2 contenu2"
     "footer footer";
 }
-.header{
+header{
     background: #ffc812;
     grid-area: header;
 }
-.nav{
+nav{
     background: #d38900;
     grid-area: nav;
 }
@@ -29,16 +29,27 @@
     background: rgb(138, 188, 63);
     grid-area: contenu2;
 }
-.footer{
+footer{
     background: #56c7ff;
     grid-area: footer;
 }
-p{
+h1{
     font-size: 50px;
     text-align: center;
-    color:white;
+    color:black;
+}
+p{
+    font-size: 30px;
+    text-align: center;
+    color:black;
+    margin:auto;
 }
 
+@media (min-width: 560px){
+    p{
+        width: 80%;
+    }
+}
 @media (min-width: 768px){
     .container{
         display: grid;
